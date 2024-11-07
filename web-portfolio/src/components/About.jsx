@@ -30,8 +30,11 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-8">
             <div>
               <p className="text-gray-600 dark:text-gray-300 mb-4">
-              Soy un desarrollador web junior, con 1 año de experiencia en la creación de aplicaciones web.
-              Me especializo en JavaScript y tecnologías web modernas, creando aplicaciones responsivas y fáciles de usar.
+              ¡Hola! Soy Antonio Gómez, también conocido como Saltador.<br/>
+              Soy un desarrollador web full stack, enfocado en crear aplicaciones modernas y eficientes. <br/>
+              ras completar recientemente mi formación, busco integrarme en un equipo donde pueda seguir creciendo como desarrollador junior y aportar mis conocimientos.<br/>
+              Mi enfoque siempre está en construir soluciones escalables, bien estructuradas y fáciles de mantener.<br/>
+              Si necesitas un desarrollador apasionado y comprometido, no dudes en contactarme. ¡Estoy listo para colaborar y contribuir al éxito de tu equipo!
               </p>
               <p className="text-gray-600 dark:text-gray-300">
               Cuando no estoy programando, puedes encontrarme aprendiendo nuevas tecnologías y reforzando los conocimientos adquiridos.
