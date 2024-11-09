@@ -18,14 +18,11 @@ const Navbar = ({ darkMode, setDarkMode }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex-shrink-0 flex items-center">
-            <img
-              src="../../../public/logo6.PNG" 
-              alt="Logo"
-              className="h-12 w-auto ml-5 rounded-lg" 
-            />
+            <h1 className='text-gray-600 dark:text-gray-300'>ANTONIO GÓMEZ DEV.</h1>
           </div>
           
-          <div className="hidden md:flex items-center space-x-4">
+          {/* Menú en pantallas medianas o grandes */}
+          <div className="hidden lg:flex items-center space-x-4">
             {links.map(link => (
               <NavLink key={link.to} to={link.to}>
                 {link.name}
@@ -39,7 +36,8 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             </button>
           </div>
 
-          <div className="flex md:hidden items-center space-x-2">
+          {/* Menú en pantallas pequeñas */}
+          <div className="flex lg:hidden items-center space-x-2">
             <button
               onClick={() => setDarkMode(!darkMode)}
               className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-2 py-2"
@@ -56,9 +54,9 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         </div>
       </div>
 
-      {/* Mobile menu */}
+      {/* Menú para móviles */}
       {isOpen && (
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {links.map(link => (
               <NavLink key={link.to} to={link.to} onClick={() => setIsOpen(false)}>

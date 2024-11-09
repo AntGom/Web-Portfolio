@@ -1,5 +1,6 @@
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs } from "react-icons/fa";
 import { SiTailwindcss, SiExpress, SiMysql, SiMongodb, SiVite } from "@icons-pack/react-simple-icons";
+import { motion } from "framer-motion";
 
 const SkillCard = () => {
   const skillIcons = {
@@ -48,22 +49,24 @@ const SkillCard = () => {
   const skills = Object.keys(skillIcons);
 
   return (
-    <div className="bg-white dark:bg-gray-900 shadow-md rounded-2xl p-8 w-full md:w-2/5 lg:w-2/4">
-    <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4 text-center">
-      Stack tecnológico
-    </h2>
-    <div className="grid grid-cols-2 gap-4">
-      {skills.map((skill) => (
-        <div
-          key={skill}
-          className="flex items-center justify-center gap-2 bg-gray-100 dark:bg-gray-700 rounded-lg p-4 text-gray-900 dark:text-gray-200"
-        >
-          {skillIcons[skill].icon}
-          <span className="text-lg">{skillIcons[skill].name}</span>
-        </div>
-      ))}
-    </div>
-  </div>
+    <motion.div
+      className="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8 w-full sm:w-full md:w-full lg:w-full"
+    >
+      <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4 text-center">
+        Stack tecnológico
+      </h2>
+      <div className="grid grid-cols-1  md:grid-cols-2 gap-4">
+        {skills.map((skill) => (
+          <div
+            key={skill}
+            className="flex items-center justify-center gap-2 bg-gray-100 dark:bg-gray-700 rounded-lg p-3 md:p-4 text-gray-900 dark:text-gray-200"
+          >
+            {skillIcons[skill].icon}
+            <span className="text-lg">{skillIcons[skill].name}</span>
+          </div>
+        ))}
+      </div>
+    </motion.div>
   );
 };
 
