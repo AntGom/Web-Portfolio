@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import PropTypes from 'prop-types';
 import { FaMoon, FaSun, FaBars, FaTimes } from 'react-icons/fa';
-import { Link } from 'react-scroll';
+import { useState } from 'react';
+import NavLink from '../helpers/Navigation';
 
 const Navbar = ({ darkMode, setDarkMode }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,24 +14,22 @@ const Navbar = ({ darkMode, setDarkMode }) => {
   ];
 
   return (
-    <nav className="fixed w-full bg-white dark:bg-gray-900 shadow-lg z-50">
+    <nav className="fixed w-full bg-gray-100 dark:bg-gray-900 shadow-lg z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex-shrink-0 flex items-center">
-            <h1 className="text-xl font-bold text-gray-800 dark:text-white">SALTADOR</h1>
+            <img
+              src="../../../public/logo6.PNG" 
+              alt="Logo"
+              className="h-12 w-auto ml-5 rounded-lg" 
+            />
           </div>
           
           <div className="hidden md:flex items-center space-x-4">
             {links.map(link => (
-              <Link
-                key={link.to}
-                to={link.to}
-                smooth={true}
-                duration={500}
-                className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-3 py-2 cursor-pointer"
-              >
+              <NavLink key={link.to} to={link.to}>
                 {link.name}
-              </Link>
+              </NavLink>
             ))}
             <button
               onClick={() => setDarkMode(!darkMode)}
@@ -40,7 +39,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             </button>
           </div>
 
-          <div className="flex md:hidden items-center space-x-0"> 
+          <div className="flex md:hidden items-center space-x-2">
             <button
               onClick={() => setDarkMode(!darkMode)}
               className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-2 py-2"
@@ -57,27 +56,25 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         </div>
       </div>
 
-      {/* Menú tamaño móvil */}
+      {/* Mobile menu */}
       {isOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {links.map(link => (
-              <Link
-                key={link.to}
-                to={link.to}
-                smooth={true}
-                duration={500}
-                className="block text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-3 py-2"
-                onClick={() => setIsOpen(false)}
-              >
+              <NavLink key={link.to} to={link.to} onClick={() => setIsOpen(false)}>
                 {link.name}
-              </Link>
+              </NavLink>
             ))}
           </div>
         </div>
       )}
     </nav>
   );
+};
+
+Navbar.propTypes = {
+  darkMode: PropTypes.bool.isRequired,
+  setDarkMode: PropTypes.func.isRequired,
 };
 
 export default Navbar;

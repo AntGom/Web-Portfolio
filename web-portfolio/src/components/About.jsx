@@ -1,22 +1,10 @@
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
+import SkillCard from "./cards/SkillsCard";
+import ToolCard from "./cards/ToolsCard";
 
 const About = () => {
-  const skills = [
-    'HTML',
-    'CSS',
-    'Tailwindcss',
-    'JavaScript (ES8+)',
-    'React',
-    'Node.js',
-    'Express',
-    'SQL',
-    'MySQL',
-    'Git',
-    
-  ];
-
   return (
-    <section id="about" className="py-20 bg-gray-50 dark:bg-gray-800">
+    <section id="about" className="py-10 bg-gray-100 dark:bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0 }}
@@ -24,37 +12,60 @@ const About = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-8">
-            Un poco de información sobre mí.
-          </h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
-              ¡Hola! Soy Antonio Gómez, también conocido como Saltador.<br/>
-              Soy un desarrollador web full stack, enfocado en crear aplicaciones modernas y eficientes. <br/>
-              ras completar recientemente mi formación, busco integrarme en un equipo donde pueda seguir creciendo como desarrollador junior y aportar mis conocimientos.<br/>
-              Mi enfoque siempre está en construir soluciones escalables, bien estructuradas y fáciles de mantener.<br/>
-              Si necesitas un desarrollador apasionado y comprometido, no dudes en contactarme. ¡Estoy listo para colaborar y contribuir al éxito de tu equipo!
-              </p>
-              <p className="text-gray-600 dark:text-gray-300">
-              Cuando no estoy programando, puedes encontrarme aprendiendo nuevas tecnologías y reforzando los conocimientos adquiridos.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
-                Stack tecnológico
-              </h3>
-              <div className="grid grid-cols-2 gap-2">
-                {skills.map((skill) => (
-                  <div
-                    key={skill}
-                    className="bg-white dark:bg-gray-700 rounded-lg p-2 text-center text-gray-800 dark:text-gray-200"
-                  >
-                    {skill}
-                  </div>
-                ))}
+          <div className="bg-white dark:bg-gray-900 shadow-md rounded-2xl p-8 mb-8 flex flex-col md:flex-row gap-8">
+            <div className="md:w-1/2">
+              <div className="relative w-48 h-48 ">
+                <div className="z-40">
+                  <img
+                    src="../../public/lince.jpg"
+                    alt="lince"
+                    className="absolute top-0 left-0 z-10 rounded-lg w-3/4 h-full object-cover border-4 border-blue-600 dark:border-gray-700"
+                  />
+                </div>
+                <div className="z-30">
+                  <img
+                    src="../../public/meler.jpg"
+                    alt="placa"
+                    className="absolute top-10 left-32 z-30 rounded-lg w-3/4 h-full object-cover border-4 border-blue-600 dark:border-gray-700"
+                  />
+                </div>
+                <div className="z-20">
+                  <img
+                    src="../../public/piscina.jpg"
+                    alt="piscina"
+                    className="absolute top-0 left-60 z-20 rounded-lg w-3/4 h-full object-cover border-4 border-blue-600 dark:border-gray-700"
+                  />
+                </div>
               </div>
             </div>
+
+            <div className="text-gray-600 dark:text-gray-300 md:w-1/2">
+              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+                Sobre mí.
+              </h2>
+              <p>
+                ¡Hola Mundo! Soy Antonio, natural de Trigueros y sevillano de
+                adopción.
+              </p>
+              <p>
+                {" "}
+                Mi aventura en el desarrollo web comenzó en 2024 y, desde
+                entonces, he trabajado en proyectos que me han permitido crecer
+                y aprender de forma constante. Como desarrollador web full
+                stack, mi objetivo es crear aplicaciones modernas, escalables y
+                fáciles de mantener.
+              </p>
+              <p>
+                Si estás buscando a un desarrollador apasionado, comprometido y
+                siempre dispuesto a aprender, ¡hablemos! Estoy listo para
+                colaborar y contribuir al éxito de tu equipo.
+              </p>
+            </div>
+          </div>
+          {/* Div para las tarjetas */}
+          <div className="flex flex-col md:flex-row gap-8 md:gap-8 justify-center md:justify-around ">
+            <SkillCard />
+            <ToolCard />
           </div>
         </motion.div>
       </div>

@@ -1,6 +1,6 @@
 # Web Portfolio
 
-Este es un portafolio web que muestra algunos de los proyectos que he realizado utilizando diversas tecnologías web. El portafolio incluye una sección sobre mí, una lista de habilidades y una galería de proyectos con enlaces a los proyectos en vivo y a sus repositorios en GitHub.
+Este es un portfolio web que muestra algunos de los proyectos que he realizado utilizando diversas tecnologías web. El portafolio incluye una sección sobre mí, una lista de habilidades y una galería de proyectos con enlaces a los proyectos en vivo y a sus repositorios en GitHub.
 
 ## Secciones
 
@@ -14,7 +14,7 @@ Este es un portafolio web que muestra algunos de los proyectos que he realizado 
 - HTML
 - CSS
 - Tailwind CSS
-- JavaScript (ES8+)
+- JavaScript 
 - React + Vite
 - Git
 - Framer Motion

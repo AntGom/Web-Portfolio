@@ -3,6 +3,24 @@ import { motion } from "framer-motion";
 const Projects = () => {
   const projects = [
     {
+      title: "Proyecto: Coworking Spaces",
+      description:
+        "Gestión integral de espacios. Calendario, reservas, incidencias y chat en tiempo real.",
+      image: "/coworking.PNG",
+      tech: [ "HTML","CSS","JavaScript","MySQL","NodeJS","React+Vite","Tailwind",],
+      link: "#",
+      repo: "https://github.com/antgom/CoworkingSpaces",
+    },
+    {
+      title: "Web-Portfolio",
+      description:
+        "Web personal para mostrar mis proyectos y habilidades.",
+      image: "/portfolio.PNG",
+      tech: ["HTML", "CSS", "JavaScript", "React + Vite", "Tailwind",],
+      link: "https://antgom.github.io/JuegosColores",
+      repo: "https://github.com/antgom/JuegosColores",
+    },
+    {
       title: "To Do List",
       description: 'Primer proyecto con Vanilla JavaScript. Lista de tareas clásica con "modo oscuro".',
       image: "/toDoList2.PNG",
@@ -19,28 +37,10 @@ const Projects = () => {
       link: "https://antgom.github.io/JuegosColores",
       repo: "https://github.com/antgom/JuegosColores",
     },
-
-    {
-      title: "Proyecto: Coworking Spaces",
-      description:
-        "Gestión integral de espacios. Calendario, reservas, incidencias y chat en tiempo real.",
-      image: "https://via.placeholder.com/400x300",
-      tech: [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "MySQL",
-        "NodeJS",
-        "React+Vite",
-        "Tailwind",
-      ],
-      link: "#",
-      repo: "https://github.com/antgom/CoworkingSpaces",
-    },
   ];
 
   return (
-    <section id="projects" className="py-20">
+    <section id="projects" className="py-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0 }}
@@ -51,12 +51,12 @@ const Projects = () => {
           <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12">
             Proyectos
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
             {projects.map((project) => (
               <motion.div
                 key={project.title}
-                className="relative  bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg"
-                whileHover={{  scale: 1.05 }}
+                className="relative bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg"
+                whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.2 }}
               >
                 <img
