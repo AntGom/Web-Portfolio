@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import ProjectCard from './ProjectCard';
+import ProjectCard from './cards/ProjectsCard';
 
 const Projects = () => {
   const projects = [
@@ -7,7 +7,7 @@ const Projects = () => {
       title: "Proyecto: Coworking Spaces",
       description:
         "Gestión integral de espacios. Calendario, reservas, incidencias y chat en tiempo real.",
-      image: "/Web-Portfolio/coworking.PNG", // Actualiza la ruta
+      image: "/Web-Portfolio/coworking.PNG", 
       tech: [ "HTML","CSS","JavaScript","MySQL","NodeJS","React+Vite","Tailwind",],
       link: "#",
       repo: "https://github.com/antgom/CoworkingSpaces",
@@ -16,7 +16,7 @@ const Projects = () => {
       title: "Web-Portfolio",
       description:
         "Web personal para mostrar mis proyectos y habilidades.",
-      image: "/Web-Portfolio/portfolio.PNG", // Actualiza la ruta
+      image: "/Web-Portfolio/portfolio.PNG", 
       tech: ["HTML", "CSS", "JavaScript", "React + Vite", "Tailwind",],
       link: "https://antgom.github.io/JuegosColores",
       repo: "https://github.com/antgom/JuegosColores",
@@ -24,7 +24,7 @@ const Projects = () => {
     {
       title: "To Do List",
       description: 'Primer proyecto con Vanilla JavaScript. Lista de tareas clásica con "modo oscuro".',
-      image: "/Web-Portfolio/toDoList2.PNG", // Actualiza la ruta
+      image: "/Web-Portfolio/toDoList2.PNG", 
       tech: ["HTML", "CSS", "JavaScript"],
       link: "https://listadetareashechas.netlify.app/",
       repo: "https://github.com/antgom/ToDoList",
@@ -33,7 +33,7 @@ const Projects = () => {
       title: "Juego Colores",
       description:
         "Proyecto grupal con Vanilla JavaScript. ¡Pon a prueba tu daltonismo!",
-      image: "/Web-Portfolio/colores.PNG", // Actualiza la ruta
+      image: "/Web-Portfolio/colores.PNG", 
       tech: ["HTML", "CSS", "JavaScript"],
       link: "https://antgom.github.io/JuegosColores",
       repo: "https://github.com/antgom/JuegosColores",
