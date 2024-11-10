@@ -1,8 +1,13 @@
 import PropTypes from 'prop-types';
+import { motion } from 'framer-motion';
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className="relative bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg">
+    <motion.div
+      className="relative bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg"
+      whileHover={{ scale: 1.05 }}
+      transition={{ duration: 0.2 }}
+    >
       <img
         src={project.image}
         alt={project.title}
@@ -44,7 +49,7 @@ const ProjectCard = ({ project }) => {
           </a>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
