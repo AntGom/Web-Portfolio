@@ -60,7 +60,7 @@ const ToolCard = () => {
         ))}
       </div>
       <div className="flex justify-center mt-7 mb-6">
-        <a href="../../../public/CV_Antonio_gomez_dmgz.pdf" download>
+        <a href="/Web-Portfolio/CV_Antonio_gomez_dmgz.pdf" download>
           <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
             Descargar CV
           </button>
