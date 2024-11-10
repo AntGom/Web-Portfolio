@@ -18,7 +18,7 @@ const About = () => {
               <div className="relative w-48 h-48 mx-auto sm:w-40 sm:h-40 md:w-48 md:h-48">
                 <div className="z-40">
                   <img
-                    src="/Web-Portfolio/lince.jpg" 
+                    src="/Web-Portfolio/lince.JPG" 
                     alt="lince"
                     className="absolute top-0 -left-20 z-10 rounded-lg w-3/4 h-full object-cover sm:w-2/3 sm:left-0 md:w-3/4 md:-left-44 lg:-left-20"
                   />
