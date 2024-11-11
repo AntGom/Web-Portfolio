@@ -11,7 +11,7 @@ const ProjectCard = ({ project }) => {
       <img
         src={project.image}
         alt={project.title}
-        className="w-full h-48 object-contain mt-4 shadow-lg"
+        className="w-full h-48 object-contain mt-4 "
       />
       <div className="p-6">
         <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">

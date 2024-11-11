@@ -10,7 +10,7 @@ const Projects = () => {
       image: "/Web-Portfolio/coworking.PNG", 
       tech: [ "HTML","CSS","JavaScript","MySQL","NodeJS","React+Vite","Tailwind",],
       link: "#",
-      repo: "https://github.com/antgom/CoworkingSpaces",
+      repo: "https://github.com/AntGom/Coworking_Space",
     },
     {
       title: "Web-Portfolio",
@@ -18,8 +18,8 @@ const Projects = () => {
         "Web personal para mostrar mis proyectos y habilidades.",
       image: "/Web-Portfolio/portfolio.PNG", 
       tech: ["HTML", "CSS", "JavaScript", "React + Vite", "Tailwind",],
-      link: "https://antgom.github.io/JuegosColores",
-      repo: "https://github.com/antgom/JuegosColores",
+      link: "https://antgom.github.io/Web-Portfolio/",
+      repo: "https://github.com/AntGom/Web-Portfolio",
     },
     {
       title: "To Do List",
@@ -27,7 +27,7 @@ const Projects = () => {
       image: "/Web-Portfolio/toDoList2.PNG", 
       tech: ["HTML", "CSS", "JavaScript"],
       link: "https://listadetareashechas.netlify.app/",
-      repo: "https://github.com/antgom/ToDoList",
+      repo: "https://github.com/AntGom/todolist34rt",
     },
     {
       title: "Juego Colores",
@@ -49,9 +49,11 @@ const Projects = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12">
-            Proyectos
-          </h2>
+       
+<h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-8 bg-blue-500 p-4 shadow-lg rounded">
+  Proyectos
+</h2>
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
             {projects.map((project) => (
               <ProjectCard key={project.title} project={project} />

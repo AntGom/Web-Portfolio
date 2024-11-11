@@ -17,8 +17,10 @@ const Navbar = ({ darkMode, setDarkMode }) => {
     <nav className="fixed w-full bg-gray-100 dark:bg-gray-900 shadow-lg z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
-          <div className="flex-shrink-0 flex items-center">
-            <h1 className='text-gray-600 dark:text-gray-300'>ANTONIO GÓMEZ DEV.</h1>
+          <div className="flex-shrink-0 flex items-center m">
+            <NavLink to="home">
+              <h1 className='text-gray-600 dark:text-gray-300 '>ANTONIO GÓMEZ DEV.</h1>
+            </NavLink>
           </div>
           
           {/* Menú en pantallas medianas o grandes */}

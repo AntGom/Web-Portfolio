@@ -32,7 +32,7 @@ const Footer = () => {
             </a>
           </div>
           <p className="text-gray-500 dark:text-gray-400 text-sm">
-            © {new Date().getFullYear()} Saltador. Todos los derechos reservados
+            © {new Date().getFullYear()} Antonio Gómez Domínguez. Todos los derechos reservados.
           </p>
         </div>
       </div>
