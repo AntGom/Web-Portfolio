@@ -14,3 +14,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+#message::placeholder{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(-50%);
+  padding-left: 0.75rem; /* Ajusta según sea necesario */
+  
+}

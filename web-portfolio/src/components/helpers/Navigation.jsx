@@ -7,7 +7,7 @@ const NavLink = ({ to, children }) => (
     smooth={false}
     duration={500}
     offset={-40} 
-    className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white px-3 py-2 cursor-pointer"
+    className="text-gray-50  hover:text-gray-900 px-3 py-2 cursor-pointer"
   >
     {children}
   </Link>

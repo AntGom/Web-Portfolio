@@ -1,42 +1,59 @@
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-      <section id="home" className="h-full flex items-center justify-center pt-24">
-        <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white dark:bg-gray-800 shadow-md rounded-2xl p-8 text-center">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-            >
-              <h1 className="text-4xl sm:text-6xl font-bold text-blue-600 dark:text-white mb-4">
-                Antonio Gómez Domínguez
-              </h1>
-              <h2 className="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 mb-8">
-                &lt; Desarrollador Full Stack Jr. /&gt;
-              </h2>
-              <p className="text-lg text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto">
-                Creo sitios web responsivos y optimizados para ofrecer experiencias fluidas y atractivas en cualquier dispositivo.
-              </p>
-              <div className="flex justify-center gap-4">
-                <a
-                  href="#contact"
-                  className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
-                >
-                  Contacto
-                </a>
-                <a
-                  href="#projects"
-                  className="bg-gray-300 dark:bg-gray-700 text-gray-900 dark:text-white px-6 py-3 rounded-lg hover:bg-gray-400 dark:hover:bg-gray-600 transition-colors"
-                >
-                  Ver Trabajos
-                </a>
-              </div>
-            </motion.div>
+    <section
+      id="home"
+      className="h-screen flex items-center justify-center min-h-screen bg-[url('/Web-Portfolio/imagenFondoNo.jpeg')] bg-cover bg-center bg-no-repeat bg-blend-multiply bg-sky-800 bg-opacity-95 "
+    >
+      <div className="w-full mx-auto  mt-24  text-center">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="flex flex-col items-center"
+        >
+          <div className="mb-4">
+            {" "}
+            {/* Contenedor para encabezados */}
+            <h1 className="text-4xl sm:text-6xl font-bold text-gray-50 drop-shadow-lg mb-4 md:mb-6">
+              Antonio Gómez Domínguez
+            </h1>
+            <h2 className="text-xl sm:text-2xl text-gray-50 drop-shadow-lg">
+              &lt; DESARROLLADOR FULL STACK JR. /&gt;
+            </h2>
           </div>
-        </div>
-      </section>
+
+          <div className="mb-6">
+            {/* Contenedor para el párrafo */}
+            <p className="text-lg text-gray-50 max-w-2xl mx-auto drop-shadow-lg">
+              Creo sitios web responsivos y optimizados para ofrecer
+              experiencias fluidas y atractivas en cualquier dispositivo.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-4 justify-center mt-4 mb-4">
+            {/* Contenedor para botones */}
+            <motion.a
+              href="#contact"
+              className="bg-transparent border-2 text-gray-50 px-8 py-2 text-sm rounded-full hover:bg-[#ffa53b] transition-colors flex justify-center"
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.2 }}
+            >
+              <span>Contacto</span>
+            </motion.a>
+            <motion.a
+              href="#projects"
+              className="bg-[#ffa53b] text-gray-50 px-8 py-2 text-sm rounded-full hover:bg-[#0f406a] transition-colors flex justify-center"
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.2 }}
+            >
+              <span>Ver Trabajos</span>
+            </motion.a>
+          </div>
+        </motion.div>
+      </div>
+    </section>
   );
 };
 
