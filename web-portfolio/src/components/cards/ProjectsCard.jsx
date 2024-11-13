@@ -1,13 +1,37 @@
 import PropTypes from "prop-types";
+import { useState } from "react";
+import Slider from "react-slick"; // Importa el componente Slider
 
 const ProjectCard = ({ project }) => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: isHovered,
+    autoplaySpeed: 2000,
+  };
+
   return (
-    <div className="relative bg-[#f3f4f6] dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg ">
-      <img
-        src={project.image}
-        alt={project.title}
-        className="w-full h-48 object-contain mt-4 "
-      />
+    <div
+      className="relative bg-[#f3f4f6] dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <Slider {...settings}>
+        {project.images.map((image, index) => (
+          <div key={index}>
+            <img
+              src={image}
+              alt={`${project.title} - ${index}`}
+              className="w-4/5 h-48 object-contain mt-4 bg-white mx-auto rounded-lg"
+            />
+          </div>
+        ))}
+      </Slider>
       <div className="p-6">
         <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
           {project.title}
@@ -30,7 +54,8 @@ const ProjectCard = ({ project }) => {
             href={project.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-[#ffa53b] text-gray-50 px-8 py-2 text-md rounded-full hover:bg-[#0f406a] transition-colors flex items-center gap-x-2 border-2 border-[#ffa53b] hover:border-[#0f406a]"          >
+            className="bg-[#ffa53b] text-gray-50 px-8 py-2 text-md rounded-full hover:bg-[#0f406a] transition-colors flex items-center gap-x-2 border-2 border-[#ffa53b] hover:border-[#0f406a]"
+          >
             Ver Proyecto
           </a>
           <a
@@ -38,7 +63,7 @@ const ProjectCard = ({ project }) => {
             target="_blank"
             rel="noopener noreferrer"
             className="bg-transparent text-[#0f406a] px-4 py-2 text-md rounded-full hover:text-[#ffa53b] hover:border-[#ffa53b] transition-colors flex items-center gap-x-2 border-2 border-[#0f406a]"
-            >
+          >
             Ver Repositorio
           </a>
         </div>
@@ -51,7 +76,7 @@ ProjectCard.propTypes = {
   project: PropTypes.shape({
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired,
+    images: PropTypes.arrayOf(PropTypes.string).isRequired, // Cambia 'image' a 'images'
     tech: PropTypes.arrayOf(PropTypes.string).isRequired,
     link: PropTypes.string.isRequired,
     repo: PropTypes.string.isRequired,

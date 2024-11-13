@@ -51,7 +51,7 @@ const ToolCard = () => {
         {tools.map((tool) => (
           <div
             key={tool}
-            className="flex items-center justify-center gap-2 bg-gray-200 dark:bg-gray-700 rounded-lg p-3 md:p-4 text-gray-900 dark:text-gray-200"
+            className="flex items-center justify-center gap-2 bg-white dark:bg-gray-700 rounded-lg p-3 md:p-4 text-gray-900 dark:text-gray-200"
           >
             {toolsIcons[tool].icon}
             <span className="text-lg hidden md:block">{toolsIcons[tool].name}</span>

@@ -7,7 +7,10 @@ const Projects = () => {
       title: "Coworking Spaces",
       description:
         "Gestión integral de espacios. Calendario, reservas, incidencias y chat en tiempo real.",
-      image: "/Web-Portfolio/coworking.PNG",
+      images: [ 
+        "/Web-Portfolio/coworking.PNG",
+        "/Web-Portfolio/coworkingPc.PNG", 
+      ],
       tech: [
         "HTML",
         "CSS",
@@ -23,29 +26,41 @@ const Projects = () => {
     {
       title: "Web-Portfolio",
       description: "Web personal para mostrar mis proyectos y habilidades.",
-      image: "/Web-Portfolio/portfolio.PNG",
+      images: [
+        "/Web-Portfolio/portfolio.PNG",
+        "/Web-Portfolio/portfolioMovil.PNG",
+        "/Web-Portfolio/portfolioPc.PNG", 
+      ],
       tech: ["HTML", "CSS", "JavaScript", "React + Vite", "Tailwind"],
       link: "https://antgom.github.io/Web-Portfolio/",
       repo: "https://github.com/AntGom/Web-Portfolio",
     },
     {
-      title: "To Do List",
-      description:
-        'Primer proyecto con Vanilla JavaScript. Lista de tareas clásica con "modo oscuro".',
-      image: "/Web-Portfolio/toDoList2.PNG",
-      tech: ["HTML", "CSS", "JavaScript"],
-      link: "https://listadetareashechas.netlify.app/",
-      repo: "https://github.com/AntGom/todolist34rt",
-    },
-    {
       title: "Juego Colores",
       description:
         "Proyecto grupal con Vanilla JavaScript. ¡Pon a prueba tu daltonismo!",
-      image: "/Web-Portfolio/colores.PNG",
+      images: [ 
+        "/Web-Portfolio/colores.PNG",
+        "/Web-Portfolio/colorMovil.PNG",
+        "/Web-Portfolio/colorPc.PNG" 
+      ],
       tech: ["HTML", "CSS", "JavaScript"],
       link: "https://antgom.github.io/JuegosColores",
       repo: "https://github.com/antgom/JuegosColores",
     },
+    {
+      title: "To Do List",
+      description:
+        'Primer proyecto con Vanilla JavaScript. Lista de tareas clásica con "modo oscuro".',
+      images: [ 
+        "/Web-Portfolio/toDoList2.PNG",
+        "/Web-Portfolio/pendingbookings.PNG",
+      ],
+      tech: ["HTML", "CSS", "JavaScript"],
+      link: "https://listadetareashechas.netlify.app/",
+      repo: "https://github.com/AntGom/todolist34rt",
+    },
+    
   ];
 
   return (
