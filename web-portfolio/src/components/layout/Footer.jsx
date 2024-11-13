@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -22,17 +22,10 @@ const Footer = () => {
             >
               <FaLinkedin className="text-2xl" />
             </a>
-            <a
-              href="https://twitter.com/AntonioGmezDgu1"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-50 "
-            >
-              <FaTwitter className="text-2xl" />
-            </a>
           </div>
           <p className="text-gray-50 text-center">
-            © {new Date().getFullYear()} Antonio Gómez Domínguez. Todos los derechos reservados.
+            © {new Date().getFullYear()} Antonio Gómez Domínguez. Todos los
+            derechos reservados.
           </p>
         </div>
       </div>

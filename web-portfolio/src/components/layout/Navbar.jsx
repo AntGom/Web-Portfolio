@@ -18,12 +18,12 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 
   return (
     <nav className="fixed w-full bg-[#0f4069] z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto pr-2  lg:px-8">
         <div className="flex justify-between items-center m-0">
           <NavLink to="home">
             <div className="flex flex-col items-center ">
-              <h1 className="text-gray-50 hover:text-gray-900">&lt;AG/&gt; ANTONIO GÓMEZ</h1>
-              <p className="ml-12 ext-gray-50 text-gray-50 hover:text-gray-900">Desarrollador Web</p>
+              <img src="/Web-Portfolio/logo.png" alt="Logo" className="h- w-auto" />
+              
             </div>
           </NavLink>
          

@@ -15,7 +15,6 @@ const Hero = () => {
         >
           <div className="mb-4">
             {" "}
-            {/* Contenedor para encabezados */}
             <h1 className="text-4xl sm:text-6xl font-bold text-gray-50 drop-shadow-lg mb-4 md:mb-6">
               Antonio Gómez Domínguez
             </h1>
@@ -25,18 +24,15 @@ const Hero = () => {
           </div>
 
           <div className="mb-6">
-            {/* Contenedor para el párrafo */}
             <p className="text-lg text-gray-50 max-w-2xl mx-auto drop-shadow-lg">
-              Creo sitios web responsivos y optimizados para ofrecer
-              experiencias fluidas y atractivas en cualquier dispositivo.
+            Creo sitios web optimizados, adaptados para ofrecer una experiencia fluida y atractiva en cualquier dispositivo.
             </p>
           </div>
 
           <div className="grid grid-cols-1 gap-4 justify-center mt-4 mb-4">
-            {/* Contenedor para botones */}
             <motion.a
               href="#contact"
-              className="bg-transparent border-2 text-gray-50 px-8 py-2 text-sm rounded-full hover:bg-[#ffa53b] transition-colors flex justify-center"
+              className="bg-transparent border-2 text-gray-50 px-8 py-2 text-md rounded-full hover:bg-[#ffa53b] hover:border-[#ffa53b] transition-colors flex justify-center"
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.2 }}
             >
@@ -44,7 +40,7 @@ const Hero = () => {
             </motion.a>
             <motion.a
               href="#projects"
-              className="bg-[#ffa53b] text-gray-50 px-8 py-2 text-sm rounded-full hover:bg-[#0f406a] transition-colors flex justify-center"
+              className="bg-[#ffa53b] text-gray-50 px-8 py-2 text-md rounded-full hover:bg-[#0f406a] transition-colors flex justify-center"
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.2 }}
             >

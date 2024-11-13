@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import SkillCard from "./cards/SkillsCard";
-import ToolCard from "./cards/ToolsCard";
-import AboutDescription from "../components/AboutComponents/AboutDescriptions";
-import AboutButtons from "../components/AboutComponents/AboutButtons";
+import SkillCard from "../Cards/SkillsCard";
+import ToolCard from "../Cards/ToolsCard";
+import AboutDescription from "./AboutDescriptions";
+import AboutButtons from "./AboutButtons";
 
 const About = () => {
   return (

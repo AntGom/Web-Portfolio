@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
-import ProjectCard from "./cards/ProjectsCard";
+import ProjectCard from "./Cards/ProjectsCard";
 
 const Projects = () => {
   const projects = [
     {
-      title: "Proyecto: Coworking Spaces",
+      title: "Coworking Spaces",
       description:
         "Gestión integral de espacios. Calendario, reservas, incidencias y chat en tiempo real.",
       image: "/Web-Portfolio/coworking.PNG",
@@ -62,7 +62,9 @@ const Projects = () => {
         >
           <div className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-2 transparent dark:bg-gray-800 rounded-2xl p-4 md:w-[83%] mx-auto flex justify-center">
             <h2 className=" font-extrabold text-[#ffa53b]">⊳⊳</h2>
-            <h2 className=" font-bold text-[#0f406a] dark:text-white mb-4">Proyectos</h2>
+            <h2 className=" font-bold text-[#0f406a] dark:text-white mb-4">
+              Proyectos
+            </h2>
           </div>
 
           <div className="grid grid-cols-1 gap-8 md:grid-cols-[40%_40%] lg:grid-cols-[40%_40%] justify-center">
