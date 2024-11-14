@@ -4,6 +4,7 @@ import ToolCard from "../Cards/ToolsCard";
 import AboutDescription from "./AboutDescriptions";
 import AboutButtons from "./AboutButtons";
 import PuntoComaIcon from "/public/img/puntoComa.svg";
+import FotoPerfil from "/ANTONIO-GOMEZ-DESARROLLO-WEB.webp"
 
 const About = () => {
   return (
@@ -22,7 +23,7 @@ const About = () => {
             {/* Div para la foto en pantallas grandes */}
             <div className="w-full lg:w-1/3 justify-center lg:justify-center hidden lg:flex">
               <img
-                src="/Web-Portfolio/fotoweb.jpeg"
+                src={FotoPerfil}
                 alt="Foto de Antonio Gómez"
                 className="rounded-lg mb-6 lg:mb-0 object-contain h-auto"
               />

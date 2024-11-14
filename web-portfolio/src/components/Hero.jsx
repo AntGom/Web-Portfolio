@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import imagenFondoNo from '/imagenFondoNo.jpeg';
+import imagenFondo from '/ANTONIO-GOMEZ-DESARROLLO-WEB-CAB.webp';
 
 const Hero = () => {
   return (
@@ -7,7 +7,7 @@ const Hero = () => {
       id="home"
       className="h-screen flex items-center justify-center min-h-screen bg-cover bg-center bg-no-repeat bg-blend-multiply bg-sky-800 bg-opacity-95"
       style={{
-        backgroundImage: `url(${imagenFondoNo})`,
+        backgroundImage: `url(${imagenFondo})`,
       }}
     >
       <div className="w-full mx-auto mt-24 text-center">
@@ -32,7 +32,7 @@ const Hero = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-4 justify-center mt-4 mb-4">
+          <div className="flex flex-col md:flex-row gap-4 justify-center mt-4 mb-4">
             <motion.a
               href="#contact"
               className="bg-transparent border-2 text-gray-50 px-8 py-2 text-md rounded-full hover:bg-[#ffa53b] hover:border-[#ffa53b] transition-colors flex justify-center"

@@ -1,11 +1,11 @@
 import NavLink from "../../helpers/Navigation";
-import logoPequeno from "/logoPequeno.png";
+import logoPequeno from "/LOGO ANTONIO-BLANCO.svg";
 
 const Logo = () => (
   <NavLink to="home">
-    <div className="flex flex-row gap-1 items-center">
-      <img src={logoPequeno} alt="Logo" />
-      <h3 className="font-semibold">ANTGOM-DEV</h3>
+    <div>
+      <img src={logoPequeno} alt="Logo" className="w-full h-auto "/>
+      
     </div>
   </NavLink>
 );

@@ -1,12 +1,16 @@
 import { motion } from "framer-motion";
 import ContactForm from "./ContactForm";
 import PuntoComaIcon from "/public/img/puntoComa.svg";
+import FotoContacto from "/ANTONIO-GOMEZ-DESARROLLO-WEB-PIE.webp"
 
 
 const Contact = () => (
   <section
     id="contact"
-    className="py-10 bg-[url('/Web-Portfolio/imagenFondo.jpeg')] bg-cover bg-center bg-no-repeat bg-blend-multiply bg-sky-800 bg-opacity-95 "
+    className="py-10  bg-cover bg-center bg-no-repeat bg-blend-multiply bg-sky-800 bg-opacity-95 "
+    style={{
+      backgroundImage: `url(${FotoContacto})`,
+    }}
   >
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-4/5">
       <motion.div

@@ -1,3 +1,5 @@
+import FotoPerfil from "/ANTONIO-GOMEZ-DESARROLLO-WEB.webp"
+
 const AboutDescription = () => (
     <div>
       <p className="text-xl text-[#0f406a] dark:text-gray-300 italic mb-2">
@@ -6,7 +8,7 @@ const AboutDescription = () => (
       </p>
   {/* Foto en medio del texto que se oculta en pantallas grandes */}
       <img
-        src="/Web-Portfolio/fotoweb.jpeg"
+        src={FotoPerfil}
         alt="Foto de Antonio Gómez"
         className="rounded-lg mb-6 lg:hidden"
       />
