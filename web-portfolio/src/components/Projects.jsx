@@ -9,8 +9,8 @@ const Projects = () => {
       description:
         "Gestión integral de espacios. Calendario, reservas, incidencias y chat en tiempo real.",
       images: [
-        "/Web-Portfolio/coworking.PNG",
-        "/Web-Portfolio/coworkingPc.PNG",
+        "/Web-Portfolio/coworking.webp",
+        "/Web-Portfolio/coworkingPc.webp",
       ],
       tech: [
         "HTML",
@@ -30,7 +30,7 @@ const Projects = () => {
       images: [
         "/Web-Portfolio/portfolio.PNG",
         "/Web-Portfolio/portfolioMovil.PNG",
-        "/Web-Portfolio/portfolioPc.PNG",
+        "/Web-Portfolio/portfolioPc.webp",
       ],
       tech: ["HTML", "CSS", "JavaScript", "React + Vite", "Tailwind"],
       link: "https://antgom.github.io/Web-Portfolio/",
