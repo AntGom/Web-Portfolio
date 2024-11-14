@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import ContactForm from "./ContactForm";
+import PuntoComaIcon from "/public/img/puntoComa.svg";
+
 
 const Contact = () => (
   <section
@@ -15,14 +17,12 @@ const Contact = () => (
       >
         <div className="max-w-xl mx-auto">
           <div className="bg-gray-500 shadow-md rounded-3xl p-6 bg-opacity-65 ">
-            <div className="flex flex-row-reverse justify-center">
-              <h2 className="text-3xl font-bold text-center text-gray-50">
-                Contacto
-              </h2>
-              <h2 className="text-3xl font-extrabold text-[#ffa53b] mb-4">
-                ⊳⊳ 
-              </h2>
-            </div>
+          <div className="flex flex-col items-center">
+            <h2 className="text-3xl md:text-3xl font-bold  dark:text-white  text-gray-50">
+              Contacto
+            </h2>
+            <img src={PuntoComaIcon} alt="Icono" className="h-10 w-14  -ml-20" />
+          </div>
             <ContactForm />
           </div>
         </div>

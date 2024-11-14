@@ -3,6 +3,7 @@ import SkillCard from "../Cards/SkillsCard";
 import ToolCard from "../Cards/ToolsCard";
 import AboutDescription from "./AboutDescriptions";
 import AboutButtons from "./AboutButtons";
+import PuntoComaIcon from "/public/img/puntoComa.svg";
 
 const About = () => {
   return (
@@ -29,11 +30,11 @@ const About = () => {
 
             {/* Texto y botones */}
             <div className="bg-transparent dark:bg-gray-800 rounded-2xl p-8 w-full lg:w-2/3 text-gray-800 dark:text-gray-300">
-              <div className="flex flex-row ">
-                <h2 className="text-3xl font-extrabold text-[#ffa53b]">⊳⊳</h2>
-                <h2 className="text-3xl font-bold text-[#0f406a] dark:text-white mb-4">
+              <div className="flex flex-col ">
+                <h2 className="text-3xl font-bold text-[#0f406a] dark:text-white">
                   Te cuento sobre mí.
                 </h2>
+                <img src={PuntoComaIcon} alt="Icono" className="h-10 w-14" />
               </div>
 
               <AboutDescription />

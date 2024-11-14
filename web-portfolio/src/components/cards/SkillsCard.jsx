@@ -1,6 +1,19 @@
-import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs } from "react-icons/fa";
-import { SiTailwindcss, SiExpress, SiMysql, SiMongodb, SiVite } from "@icons-pack/react-simple-icons";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJsSquare,
+  FaReact,
+  FaNodeJs,
+} from "react-icons/fa";
+import {
+  SiTailwindcss,
+  SiExpress,
+  SiMysql,
+  SiMongodb,
+  SiVite,
+} from "@icons-pack/react-simple-icons";
 import { motion } from "framer-motion";
+import PuntoComaIcon from "/public/img/puntoComa.svg";
 
 const SkillsCard = () => {
   const skillIcons = {
@@ -28,7 +41,7 @@ const SkillsCard = () => {
       icon: <SiMysql size={45} color="#00758F" />,
       name: "MySQL",
     },
-       "Node.js": {
+    "Node.js": {
       icon: <FaNodeJs className="text-4xl text-green-600" />,
       name: "Node.js",
     },
@@ -49,11 +62,14 @@ const SkillsCard = () => {
   const skills = Object.keys(skillIcons);
 
   return (
-    <motion.div 
-    className="bg-[#f3f4f6] dark:bg-gray-800 shadow-lg rounded-2xl p-8 w-full">
-      <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4 text-center">
-        Stack tecnológico
-      </h2>
+    <motion.div className="bg-[#f3f4f6] dark:bg-gray-800 shadow-lg rounded-2xl p-8 w-full">
+      <div className="flex flex-col">
+        <h2 className="text-3xl font-bold text-[#0f406a] dark:text-white  text-start">
+          Stack tecnológico
+        </h2>
+        <img src={PuntoComaIcon} alt="Icono" className="h-10 w-14" />
+      </div>
+
       <div className="grid grid-cols-4  md:grid-cols-2 gap-4">
         {skills.map((skill) => (
           <div
@@ -61,7 +77,9 @@ const SkillsCard = () => {
             className="flex items-center justify-center gap-2 bg-white dark:bg-gray-700 rounded-lg p-3 md:p-4 text-gray-900 dark:text-gray-200"
           >
             {skillIcons[skill].icon}
-            <span className="text-lg hidden md:block">{skillIcons[skill].name}</span>
+            <span className="text-lg hidden md:block">
+              {skillIcons[skill].name}
+            </span>
           </div>
         ))}
       </div>

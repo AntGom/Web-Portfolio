@@ -33,7 +33,7 @@ const ProjectCard = ({ project }) => {
         ))}
       </Slider>
       <div className="p-6">
-        <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+        <h3 className="text-xl font-semibold text-[#0f406a] dark:text-white mb-2">
           {project.title}
         </h3>
         <p className="text-gray-600 dark:text-gray-300 mb-4">

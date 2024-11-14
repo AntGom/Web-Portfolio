@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import ProjectCard from "./Cards/ProjectsCard";
+import PuntoComaIcon from "/public/img/puntoComa.svg";
 
 const Projects = () => {
   const projects = [
@@ -7,9 +8,9 @@ const Projects = () => {
       title: "Coworking Spaces",
       description:
         "Gestión integral de espacios. Calendario, reservas, incidencias y chat en tiempo real.",
-      images: [ 
+      images: [
         "/Web-Portfolio/coworking.PNG",
-        "/Web-Portfolio/coworkingPc.PNG", 
+        "/Web-Portfolio/coworkingPc.PNG",
       ],
       tech: [
         "HTML",
@@ -29,7 +30,7 @@ const Projects = () => {
       images: [
         "/Web-Portfolio/portfolio.PNG",
         "/Web-Portfolio/portfolioMovil.PNG",
-        "/Web-Portfolio/portfolioPc.PNG", 
+        "/Web-Portfolio/portfolioPc.PNG",
       ],
       tech: ["HTML", "CSS", "JavaScript", "React + Vite", "Tailwind"],
       link: "https://antgom.github.io/Web-Portfolio/",
@@ -39,10 +40,10 @@ const Projects = () => {
       title: "Juego Colores",
       description:
         "Proyecto grupal con Vanilla JavaScript. ¡Pon a prueba tu daltonismo!",
-      images: [ 
+      images: [
         "/Web-Portfolio/colores.PNG",
         "/Web-Portfolio/colorMovil.PNG",
-        "/Web-Portfolio/colorPc.PNG" 
+        "/Web-Portfolio/colorPc.PNG",
       ],
       tech: ["HTML", "CSS", "JavaScript"],
       link: "https://antgom.github.io/JuegosColores",
@@ -52,17 +53,15 @@ const Projects = () => {
       title: "To Do List",
       description:
         'Primer proyecto con Vanilla JavaScript. Lista de tareas clásica con "modo oscuro".',
-      images: [ 
+      images: [
         "/Web-Portfolio/todoClaro.PNG",
         "/Web-Portfolio/todoPc.PNG",
         "/Web-Portfolio/todoMovil.PNG",
-        
       ],
       tech: ["HTML", "CSS", "JavaScript"],
       link: "https://antgom.github.io/todolist/",
       repo: "https://github.com/AntGom/todolist",
     },
-    
   ];
 
   return (
@@ -77,11 +76,11 @@ const Projects = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <div className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-2 transparent dark:bg-gray-800 rounded-2xl p-4 md:w-[83%] mx-auto flex justify-center">
-            <h2 className=" font-extrabold text-[#ffa53b]">⊳⊳</h2>
-            <h2 className=" font-bold text-[#0f406a] dark:text-white mb-4">
+          <div className="flex flex-col items-center">
+            <h2 className="text-3xl md:text-3xl font-bold  dark:text-white  text-[#0f406a]">
               Proyectos
             </h2>
+            <img src={PuntoComaIcon} alt="Icono" className="h-10 w-14  -ml-20" />
           </div>
 
           <div className="grid grid-cols-1 gap-8 md:grid-cols-[40%_40%] lg:grid-cols-[40%_40%] justify-center">

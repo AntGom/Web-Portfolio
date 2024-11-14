@@ -2,6 +2,8 @@ import PropTypes from 'prop-types';
 import { FaMoon, FaSun, FaBars, FaTimes } from 'react-icons/fa';
 import { useState, useCallback } from 'react';
 import NavLink from '../helpers/Navigation';
+import logoPequeno from '../../../public/logoPequeno.png';
+
 
 const Navbar = ({ darkMode, setDarkMode }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,13 +23,15 @@ const Navbar = ({ darkMode, setDarkMode }) => {
       <div className="max-w-7xl mx-auto pr-2  lg:px-8">
         <div className="flex justify-between items-center m-0">
           <NavLink to="home">
-            <div className="flex flex-col items-center ">
-              <img src="/Web-Portfolio/logo.png" alt="Logo" className="h- w-auto" />
-              
+            <div className='flex gap-2'>
+            <img src={logoPequeno} alt="Logo" />
+              <h3>ANTGOM-DEV</h3>
             </div>
+              
+              
           </NavLink>
          
-          {/* Menú en pantallas medianas o grandes */}
+          {/* Menú en pantallas medianas y/o grandes */}
           <div className="hidden lg:flex items-center space-x-4">
             {links.map(link => (
               <NavLink key={link.to} to={link.to}>

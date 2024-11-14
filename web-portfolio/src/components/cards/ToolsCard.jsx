@@ -2,6 +2,8 @@ import { FaGitAlt, FaGithub } from "react-icons/fa";
 import { SiPostman, SiMongodb, SiMysql, SiFigma, SiNotion } from "@icons-pack/react-simple-icons";
 import { SiVisualstudiocode } from "react-icons/si";
 import { motion } from "framer-motion";
+import PuntoComaIcon from "/public/img/puntoComa.svg";
+
 
 const ToolCard = () => {
   const toolsIcons = {
@@ -42,11 +44,14 @@ const ToolCard = () => {
   const tools = Object.keys(toolsIcons);
 
   return (
-    <motion.div
-    className="bg-[#f3f4f6] dark:bg-gray-800 shadow-lg rounded-2xl p-8 w-full ">
-      <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4 text-center">
+    <motion.div className="bg-[#f3f4f6] dark:bg-gray-800 shadow-lg rounded-2xl p-8 w-full ">
+      <div>
+      <h2 className="text-3xl md:text-3xl font-bold text-[#0f406a] dark:text-white  text-start">
         Herramientas y Programas
       </h2>
+      <img src={PuntoComaIcon} alt="Icono" className="h-10 w-14" />
+      </div>
+
       <div className="grid grid-cols-4  md:grid-cols-2 gap-4">
         {tools.map((tool) => (
           <div
