@@ -53,12 +53,14 @@ const Projects = () => {
       description:
         'Primer proyecto con Vanilla JavaScript. Lista de tareas clásica con "modo oscuro".',
       images: [ 
-        "/Web-Portfolio/toDoList2.PNG",
-        "/Web-Portfolio/pendingbookings.PNG",
+        "/Web-Portfolio/todoClaro.PNG",
+        "/Web-Portfolio/todoPc.PNG",
+        "/Web-Portfolio/todoMovil.PNG",
+        
       ],
       tech: ["HTML", "CSS", "JavaScript"],
-      link: "https://listadetareashechas.netlify.app/",
-      repo: "https://github.com/AntGom/todolist34rt",
+      link: "https://antgom.github.io/todolist/",
+      repo: "https://github.com/AntGom/todolist",
     },
     
   ];
