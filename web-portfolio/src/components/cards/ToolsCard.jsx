@@ -47,7 +47,7 @@ const ToolCard = () => {
     <motion.div className="bg-[#f3f4f6] dark:bg-gray-800 shadow-lg rounded-2xl p-8 w-full ">
       <div>
       <h2 className="text-3xl md:text-3xl font-bold text-[#0f406a] dark:text-white  text-start">
-        Herramientas y Programas
+        Herramientas
       </h2>
       <img src={PuntoComaIcon} alt="Icono" className="h-10 w-14" />
       </div>
