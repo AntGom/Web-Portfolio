@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import ProjectCard from "./Cards/ProjectsCard";
+import ProjectCard from "./cards/ProjectsCard";
 import PuntoComaIcon from "/public/img/puntoComa.svg";
 
 const Projects = () => {

@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
-import { useState } from "react";
-import Slider from "react-slick"; // Importa el componente Slider
+import Slider from "react-slick"; 
+import { FaArrowRight, FaGithub } from 'react-icons/fa';
+
 
 const ProjectCard = ({ project }) => {
-  const [isHovered, setIsHovered] = useState(false);
 
   const settings = {
     dots: true,
@@ -11,15 +11,13 @@ const ProjectCard = ({ project }) => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: isHovered,
+    autoplay: false,
     autoplaySpeed: 2000,
   };
 
   return (
     <div
       className="relative bg-[#f3f4f6] dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
     >
       <Slider {...settings}>
         {project.images.map((image, index) => (
@@ -56,7 +54,7 @@ const ProjectCard = ({ project }) => {
             rel="noopener noreferrer"
             className="bg-[#ffa53b] text-gray-50 px-8 py-2 text-md rounded-full hover:bg-[#0f406a] transition-colors flex items-center gap-x-2 border-2 border-[#ffa53b] hover:border-[#0f406a]"
           >
-            Ver Proyecto
+            Visitar<FaArrowRight /> 
           </a>
           <a
             href={project.repo}
@@ -64,7 +62,7 @@ const ProjectCard = ({ project }) => {
             rel="noopener noreferrer"
             className="bg-transparent text-[#0f406a] px-4 py-2 text-md rounded-full hover:text-[#ffa53b] hover:border-[#ffa53b] transition-colors flex items-center gap-x-2 border-2 border-[#0f406a]"
           >
-            Ver Repositorio
+             <FaGithub/>Repositorio
           </a>
         </div>
       </div>

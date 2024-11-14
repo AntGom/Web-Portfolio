@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import SkillCard from "../Cards/SkillsCard";
+import SkillCard from "../cards/SkillsCard";
 import ToolCard from "../Cards/ToolsCard";
 import AboutDescription from "./AboutDescriptions";
 import AboutButtons from "./AboutButtons";

@@ -14,7 +14,6 @@ const Hero = () => {
           className="flex flex-col items-center"
         >
           <div className="mb-4">
-            {" "}
             <h1 className="text-4xl sm:text-6xl font-bold text-gray-50 drop-shadow-lg mb-4 md:mb-6">
               Antonio Gómez Domínguez
             </h1>
