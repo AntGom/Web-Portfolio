@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import imagenFondoNo from '/imagenFondoNo.jpeg';
 
 const Hero = () => {
   return (
@@ -6,7 +7,7 @@ const Hero = () => {
       id="home"
       className="h-screen flex items-center justify-center min-h-screen bg-cover bg-center bg-no-repeat bg-blend-multiply bg-sky-800 bg-opacity-95"
       style={{
-        backgroundImage: "url('/Web-Portfolio/imagenFondoNo.jpeg')",
+        backgroundImage: `url(${imagenFondoNo})`,
       }}
     >
       <div className="w-full mx-auto mt-24 text-center">

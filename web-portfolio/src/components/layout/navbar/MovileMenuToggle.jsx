@@ -1,19 +1,14 @@
 import PropTypes from "prop-types";
-import { lazy, Suspense } from "react";
-
-const FaBars = lazy(() => import("react-icons/fa").then((mod) => ({ default: mod.FaBars })));
-const FaTimes = lazy(() => import("react-icons/fa").then((mod) => ({ default: mod.FaTimes })));
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const MobileMenuToggle = ({ isOpen, toggleMenu }) => (
-  <Suspense fallback={<span>...</span>}>
-    <button
-      onClick={toggleMenu}
-      aria-label="Toggle menu"
-      className="hover:text-gray-900 px-2 py-2 text-gray-50"
-    >
-      {isOpen ? <FaTimes /> : <FaBars />}
-    </button>
-  </Suspense>
+  <button
+    onClick={toggleMenu}
+    aria-label="Toggle menu"
+    className="hover:text-gray-900 px-2 py-2 text-gray-50"
+  >
+    {isOpen ? <FaTimes /> : <FaBars />}
+  </button>
 );
 
 MobileMenuToggle.propTypes = {

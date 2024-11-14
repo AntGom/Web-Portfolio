@@ -1,17 +1,5 @@
-import {
-  FaHtml5,
-  FaCss3Alt,
-  FaJsSquare,
-  FaReact,
-  FaNodeJs,
-} from "react-icons/fa";
-import {
-  SiTailwindcss,
-  SiExpress,
-  SiMysql,
-  SiMongodb,
-  SiVite,
-} from "@icons-pack/react-simple-icons";
+import {FaJsSquare,FaCss3Alt,FaHtml5,FaNodeJs,FaReact,} from "react-icons/fa";
+import {SiTailwindcss,SiExpress,SiMysql,SiMongodb,SiVite,} from "@icons-pack/react-simple-icons";
 import { motion } from "framer-motion";
 import PuntoComaIcon from "/public/img/puntoComa.svg";
 

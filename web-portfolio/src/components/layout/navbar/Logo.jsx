@@ -1,5 +1,5 @@
 import NavLink from "../../helpers/Navigation";
-import logoPequeno from "/public/logoPequeno.png";
+import logoPequeno from "/logoPequeno.png";
 
 const Logo = () => (
   <NavLink to="home">
