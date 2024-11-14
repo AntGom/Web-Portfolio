@@ -4,9 +4,12 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="h-screen flex items-center justify-center min-h-screen bg-[url('/Web-Portfolio/imagenFondoNo.jpeg')] bg-cover bg-center bg-no-repeat bg-blend-multiply bg-sky-800 bg-opacity-95 "
+      className="h-screen flex items-center justify-center min-h-screen bg-cover bg-center bg-no-repeat bg-blend-multiply bg-sky-800 bg-opacity-95"
+      style={{
+        backgroundImage: "url('/Web-Portfolio/imagenFondoNo.jpeg')",
+      }}
     >
-      <div className="w-full mx-auto  mt-24  text-center">
+      <div className="w-full mx-auto mt-24 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -24,7 +27,7 @@ const Hero = () => {
 
           <div className="mb-6">
             <p className="text-lg text-gray-50 max-w-2xl mx-auto drop-shadow-lg">
-            Creo sitios web optimizados, adaptados para ofrecer una experiencia fluida y atractiva en cualquier dispositivo.
+              Creo sitios web optimizados, adaptados para ofrecer una experiencia fluida y atractiva en cualquier dispositivo.
             </p>
           </div>
 
