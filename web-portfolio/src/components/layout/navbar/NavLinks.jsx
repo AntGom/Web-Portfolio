@@ -15,6 +15,7 @@ const NavLinks = ({ onClick }) =>
       to={link.to}
       onClick={onClick}
       className="hover:text-gray-900 px-3 py-2 font-semibold text-gray-50"
+      href={`#${link.to}`} 
     >
       {link.name}
     </NavLink>

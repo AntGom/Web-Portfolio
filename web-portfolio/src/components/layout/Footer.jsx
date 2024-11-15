@@ -11,6 +11,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-50 "
+              aria-label="Visitar perfil de GitHub de Antonio Gómez"
             >
               <FaGithub className="text-2xl" />
             </a>
@@ -19,6 +20,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-50 "
+              aria-label="Visitar perfil de LinkedIn de Antonio Gómez"
             >
               <FaLinkedin className="text-2xl" />
             </a>

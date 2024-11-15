@@ -18,16 +18,16 @@ const Hero = () => {
           className="flex flex-col items-center"
         >
           <div className="mb-4">
-            <h1 className="text-4xl sm:text-6xl font-bold text-gray-50 drop-shadow-lg mb-4 md:mb-6">
+            <h1 className="text-4xl sm:text-4xl font-semibold text-gray-50 mb-4 md:mb-6">
               Antonio Gómez Domínguez
             </h1>
-            <h2 className="text-xl sm:text-2xl text-gray-50 drop-shadow-lg">
+            <h2 className="text-lg sm:text-xl font-semibold text-gray-50 ">
               &lt; DESARROLLADOR FULL STACK JR. /&gt;
             </h2>
           </div>
 
           <div className="mb-6">
-            <p className="text-lg text-gray-50 max-w-2xl mx-auto drop-shadow-lg">
+            <p className="text-md  text-gray-50 max-w-2xl mx-auto ">
               Creo sitios web optimizados, adaptados para ofrecer una experiencia fluida y atractiva en cualquier dispositivo.
             </p>
           </div>

@@ -28,8 +28,8 @@ const Projects = () => {
       title: "Web-Portfolio",
       description: "Web personal para mostrar mis proyectos y habilidades.",
       images: [
-        "/Web-Portfolio/portfolio.PNG",
-        "/Web-Portfolio/portfolioMovil.PNG",
+        "/Web-Portfolio/portfolio.webp",
+        "/Web-Portfolio/portfolioMovil.webp",
         "/Web-Portfolio/portfolioPc.webp",
       ],
       tech: ["HTML", "CSS", "JavaScript", "React + Vite", "Tailwind"],
@@ -41,9 +41,9 @@ const Projects = () => {
       description:
         "Proyecto grupal con Vanilla JavaScript. ¡Pon a prueba tu daltonismo!",
       images: [
-        "/Web-Portfolio/colores.PNG",
-        "/Web-Portfolio/colorMovil.PNG",
-        "/Web-Portfolio/colorPc.PNG",
+        "/Web-Portfolio/colores.webp",
+        "/Web-Portfolio/colorMovil.webp",
+        "/Web-Portfolio/colorPc.webp",
       ],
       tech: ["HTML", "CSS", "JavaScript"],
       link: "https://antgom.github.io/JuegosColores",
