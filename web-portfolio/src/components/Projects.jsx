@@ -21,7 +21,7 @@ const Projects = () => {
         "React+Vite",
         "Tailwind",
       ],
-      link: "#",
+      link: "",
       repo: "https://github.com/AntGom/Coworking_Space",
     },
     {
@@ -80,7 +80,11 @@ const Projects = () => {
             <h2 className="text-3xl md:text-3xl font-bold  dark:text-white  text-[#0f406a]">
               Proyectos
             </h2>
-            <img src={PuntoComaIcon} alt="Icono" className="h-10 w-14  -ml-20" />
+            <img
+              src={PuntoComaIcon}
+              alt="Icono"
+              className="h-10 w-14  -ml-20"
+            />
           </div>
 
           <div className="grid grid-cols-1 gap-8 md:grid-cols-[40%_40%] lg:grid-cols-[40%_40%] justify-center">

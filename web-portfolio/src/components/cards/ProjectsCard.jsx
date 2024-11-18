@@ -44,25 +44,28 @@ const ProjectCard = ({ project }) => {
           ))}
         </div>
         <div className="flex justify-between absolute bottom-4 left-6 right-6">
-          <a
-            href={project.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-[#ffa53b] text-gray-50 px-8 py-2 text-md rounded-full hover:bg-[#0f406a] transition-colors flex items-center gap-x-2 border-2 border-[#ffa53b] hover:border-[#0f406a]"
-          >
-            Visitar
-            <FaArrowRight />
-          </a>
-          <a
-            href={project.repo}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-transparent text-[#0f406a] px-4 py-2 text-md rounded-full hover:text-[#ffa53b] hover:border-[#ffa53b] transition-colors flex items-center gap-x-2 border-2 border-[#0f406a]"
-          >
-            <FaGithub />
-            Repositorio
-          </a>
-        </div>
+  {project.link && (
+    <a
+      href={project.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-[#ffa53b] text-gray-50 px-8 py-2 text-md rounded-full hover:bg-[#0f406a] transition-colors flex items-center gap-x-2 border-2 border-[#ffa53b] hover:border-[#0f406a]"
+    >
+      Visitar
+      <FaArrowRight />
+    </a>
+  )}
+  <a
+    href={project.repo}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-transparent text-[#0f406a] px-4 py-2 text-md rounded-full hover:text-[#ffa53b] hover:border-[#ffa53b] transition-colors flex items-center gap-x-2 border-2 border-[#0f406a]"
+  >
+    <FaGithub />
+    Repositorio
+  </a>
+</div>
+
       </div>
     </div>
   );
