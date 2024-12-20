@@ -26,8 +26,7 @@ const Footer = () => {
             </a>
           </div>
           <p className="text-gray-50 text-center">
-            © {new Date().getFullYear()} Antonio Gómez Domínguez. Todos los
-            derechos reservados.
+             {new Date().getFullYear()}© Antonio Gómez Domínguez. Con ❤ desde Andalucía.
           </p>
         </div>
       </div>
