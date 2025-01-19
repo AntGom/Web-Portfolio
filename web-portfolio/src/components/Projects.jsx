@@ -10,7 +10,8 @@ const Projects = () => {
         "Gestión integral de espacios. Calendario, reservas, incidencias y chat en tiempo real.",
       images: [
         "/Web-Portfolio/coworking.webp",
-        "/Web-Portfolio/coworkingPc.webp",
+        "/Web-Portfolio/coworktablet.webp",
+        "/Web-Portfolio/coworkmovil.webp",
       ],
       tech: [
         "HTML",

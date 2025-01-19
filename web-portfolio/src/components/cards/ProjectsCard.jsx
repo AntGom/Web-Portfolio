@@ -75,7 +75,7 @@ ProjectCard.propTypes = {
   project: PropTypes.shape({
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
-    images: PropTypes.arrayOf(PropTypes.string).isRequired, // Cambia 'image' a 'images'
+    images: PropTypes.arrayOf(PropTypes.string).isRequired,
     tech: PropTypes.arrayOf(PropTypes.string).isRequired,
     link: PropTypes.string.isRequired,
     repo: PropTypes.string.isRequired,
