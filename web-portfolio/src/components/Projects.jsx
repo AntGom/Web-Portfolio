@@ -55,8 +55,8 @@ const Projects = () => {
       description:
         'Primer proyecto con Vanilla JavaScript. Lista de tareas clásica con "modo oscuro".',
       images: [
-        "/Web-Portfolio/todoClaro.PNG",
-        "/Web-Portfolio/todoPc.PNG",
+        "/Web-Portfolio/todoPc.webp",
+        "/Web-Portfolio/todoTablet.webp",
         "/Web-Portfolio/todoMovil.PNG",
       ],
       tech: ["HTML", "CSS", "JavaScript"],
