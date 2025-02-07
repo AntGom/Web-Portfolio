@@ -5,9 +5,30 @@ import PuntoComaIcon from "/public/img/puntoComa.svg";
 const Projects = () => {
   const projects = [
     {
+      title: "Too-Red",
+      description:
+        "Red social/intranet corporativa, contruida con MERN stack. En desarrollo.",
+      images: [
+        "/Web-Portfolio/tooredpc.webp",
+        "/Web-Portfolio/tooredtab.webp",
+        "/Web-Portfolio/tooredmov.webp",
+      ],
+      tech: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "MongoDB",
+        "NodeJS",
+        "React+Vite",
+        "Tailwind",
+      ],
+      link: "https://too-red.vercel.app",
+      repo: "https://github.com/AntGom/Too-Red",
+    },
+    {
       title: "Coworking Spaces",
       description:
-        "Gestión integral de espacios. Calendario, reservas, incidencias y chat en tiempo real.",
+        "Gestión integral de espacios. Calendario, reservas, incidencias y chat en tiempo real. En desarrollo.",
       images: [
         "/Web-Portfolio/coworking.webp",
         "/Web-Portfolio/coworktablet.webp",
@@ -22,7 +43,7 @@ const Projects = () => {
         "React+Vite",
         "Tailwind",
       ],
-      link: "",
+      link: "https://coworking-spaces-amber.vercel.app/",
       repo: "https://github.com/AntGom/Coworking_Space",
     },
     {
