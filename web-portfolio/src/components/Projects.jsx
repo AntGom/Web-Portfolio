@@ -5,25 +5,17 @@ import PuntoComaIcon from "/public/img/puntoComa.svg";
 const Projects = () => {
   const projects = [
     {
-      title: "Too-Red",
+      title: "Ecomuebles",
       description:
-        "Red social/intranet corporativa, contruida con MERN stack. En desarrollo.",
+        "Tienda de muebles realizada con Vanilla-JS. En desarrollo. ",
       images: [
-        "/Web-Portfolio/tooredpc.webp",
-        "/Web-Portfolio/tooredtab.webp",
-        "/Web-Portfolio/tooredmov.webp",
+        "/Web-Portfolio/ecomueblePc.webp",
+        "/Web-Portfolio/ecomuebleTablet.webp",
+        "/Web-Portfolio/ecomueblesMov.webp",
       ],
-      tech: [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "MongoDB",
-        "NodeJS",
-        "React+Vite",
-        "Tailwind",
-      ],
-      link: "https://too-red.vercel.app",
-      repo: "https://github.com/AntGom/Too-Red",
+      tech: ["HTML", "CSS", "JavaScript"],
+      link: "https://antgom.github.io/EcoMueblesVanilla/",
+      repo: "https://github.com/AntGom/EcoMueblesVanilla",
     },
     {
       title: "Coworking Spaces",
@@ -46,6 +38,30 @@ const Projects = () => {
       link: "https://coworking-spaces-amber.vercel.app/",
       repo: "https://github.com/AntGom/Coworking_Space",
     },
+        {
+      title: "Todo Controlado",
+      description: "Organizador de tareas/eventos con sección de noticias, meteorología y calendario",
+      images: [
+        "/Web-Portfolio/todoconPc.webp",
+        "/Web-Portfolio/todoconTab.webp",
+        "/Web-Portfolio/todoMov.webp",
+      ],
+      tech: ["HTML", "CSS", "JavaScript"],
+      link: "https://todo-controlado.vercel.app/",
+      repo: "https://github.com/AntGom/Todo-Controlado",
+    },
+    {
+      title: "Pokédex",
+      description: "Demuestra tus capacidades como maestro pokémon!",
+      images: [
+        "/Web-Portfolio/pokedexPc.webp",
+        "/Web-Portfolio/pokedexTab.webp",
+        "/Web-Portfolio/pokedexMov.webp",
+      ],
+      tech: ["HTML", "CSS", "JavaScript"],
+      link: "https://pokedex-antgom.vercel.app/",
+      repo: "https://github.com/AntGom/Pokedex",
+    },
     {
       title: "Web-Portfolio",
       description: "Web personal para mostrar mis proyectos y habilidades.",
@@ -58,6 +74,7 @@ const Projects = () => {
       link: "https://antgom.github.io/Web-Portfolio/",
       repo: "https://github.com/AntGom/Web-Portfolio",
     },
+
     {
       title: "Juego Colores",
       description:
