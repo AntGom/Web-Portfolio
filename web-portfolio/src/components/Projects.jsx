@@ -5,6 +5,24 @@ import PuntoComaIcon from "/public/img/puntoComa.svg";
 const Projects = () => {
   const projects = [
     {
+      title: "Too-Red",
+      description:
+        "Tu red social completa",
+      images: [
+        "/Web-Portfolio/toopc.PNG",
+        "/Web-Portfolio/toochat.PNG",
+        "/Web-Portfolio/toomovil.PNG",
+      ],
+      tech: ["HTML",
+        "JavaScript",
+        "MongoDB Atlas",
+        "NodeJS",
+        "React+Vite",
+        "Tailwind",],
+      link: "https://too-red.vercel.app",
+      repo: "https://github.com/AntGom/Too-Red",
+    },
+    {
       title: "Ecomuebles",
       description:
         "Tienda de muebles realizada con Vanilla-JS. En desarrollo. ",
