@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import SkillCard from "../cards/SkillsCard";
-import ToolCard from "../Cards/ToolsCard";
+import ToolCard from "../cards/ToolsCard";
 import AboutDescription from "./AboutDescriptions";
 import AboutButtons from "./AboutButtons";
 import PuntoComaIcon from "/public/img/puntoComa.svg";
