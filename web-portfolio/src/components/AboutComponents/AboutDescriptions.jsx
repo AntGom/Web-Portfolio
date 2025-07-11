@@ -19,8 +19,7 @@ const AboutDescription = () => (
       ¡Hola Mundo! Soy Antonio, natural de Trigueros y sevillano de adopción.
     </p>
     <p className="mb-2">
-      Mi aventura en el desarrollo web comenzó en 2024 y, desde entonces, he
-      buscado proyectos que me permitan crecer y aprender de forma constante.
+      Desde que empecé mi andadura en el desarrollo web, he buscado proyectos que me permitan crecer y aprender de forma constante.
     </p>
     <p className="mb-2">
       Además de mi afición por la tecnología, soy un entusiasta de los deportes

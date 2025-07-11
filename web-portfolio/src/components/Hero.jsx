@@ -22,7 +22,7 @@ const Hero = () => {
               Antonio Gómez Domínguez
             </h1>
             <h2 className="text-lg sm:text-xl font-semibold text-gray-50 ">
-              &lt; DESARROLLADOR FULL STACK JR. /&gt;
+              &lt; DESARROLLADOR FULL STACK  /&gt;
             </h2>
           </div>
 
