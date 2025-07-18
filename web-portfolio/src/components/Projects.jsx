@@ -6,19 +6,20 @@ const Projects = () => {
   const projects = [
     {
       title: "Too-Red",
-      description:
-        "Tu red social completa",
+      description: "Tu red social completa",
       images: [
         "/Web-Portfolio/toopc.PNG",
         "/Web-Portfolio/toochat.PNG",
         "/Web-Portfolio/toomovil.PNG",
       ],
-      tech: ["HTML",
+      tech: [
+        "HTML",
         "JavaScript",
         "MongoDB Atlas",
         "NodeJS",
         "React+Vite",
-        "Tailwind",],
+        "Tailwind",
+      ],
       link: "https://too-red.vercel.app",
       repo: "https://github.com/AntGom/Too-Red",
     },
@@ -56,9 +57,10 @@ const Projects = () => {
       link: "https://coworking-spaces-amber.vercel.app/",
       repo: "https://github.com/AntGom/Coworking_Space",
     },
-        {
+    {
       title: "Todo Controlado",
-      description: "Organizador de tareas/eventos con sección de noticias, meteorología y calendario",
+      description:
+        "Organizador de tareas/eventos con sección de noticias, meteorología y calendario",
       images: [
         "/Web-Portfolio/todoconPc.webp",
         "/Web-Portfolio/todoconTab.webp",
@@ -79,6 +81,21 @@ const Projects = () => {
       tech: ["HTML", "CSS", "JavaScript"],
       link: "https://pokedex-antgom.vercel.app/",
       repo: "https://github.com/AntGom/Pokedex",
+    },
+    {
+      title: "Los Pollos Hermanos",
+      description:
+        "Landing page del restaurante ficticio de Breaking Bad.",
+      images: [
+        "/Web-Portfolio/pollosPC.PNG",
+        "/Web-Portfolio/polloMovil.PNG",
+        "/Web-Portfolio/pollosTablet.PNG",
+        "/Web-Portfolio/polloMovil2.PNG",
+
+      ],
+      tech: ["HTML", "CSS", "JavaScript", "DOM", "Local Storage"],
+      link: "https://los-pollos-hermanos-antgom.vercel.app/",
+      repo: "https://github.com/AntGom/LosPollosHermanos",
     },
     {
       title: "Web-Portfolio",
