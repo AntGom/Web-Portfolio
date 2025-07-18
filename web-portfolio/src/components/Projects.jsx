@@ -161,10 +161,12 @@ const Projects = () => {
             />
           </div>
 
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-[40%_40%] lg:grid-cols-[40%_40%] justify-center">
-            {projects.map((project) => (
-              <ProjectCard key={project.title} project={project} />
-            ))}
+          <div className="max-h-[600px] overflow-y-auto mt-8">
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-[40%_40%] lg:grid-cols-[40%_40%] justify-center">
+              {projects.map((project) => (
+                <ProjectCard key={project.title} project={project} />
+              ))}
+            </div>
           </div>
         </motion.div>
       </div>
